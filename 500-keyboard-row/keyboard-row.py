@@ -5,9 +5,9 @@ class Solution:
         row3 = set("zxcvbnmZXCVBNM")
     
         result = []
-        for word in words:
-            if all(c in row1 for c in word) or all(c in row2 for c in word) or all(c in row3 for c in word):
-                result.append(word)
+        for i in words:
+            if all(c in row1 for c in i) or all(c in row2 for c in i) or all(c in row3 for c in i):
+                result.append(i)
         return result
   
 
